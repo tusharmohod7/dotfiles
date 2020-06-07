@@ -1,0 +1,92 @@
+# i3blocks configuration file
+#
+# The i3blocks man page describes the usage of the binary,
+# and its website describes the configuration:
+#
+#     https://vivien.github.io/i3blocks
+
+
+# Global properties
+separator=true
+separator_block_width=15
+
+
+#[pacpackages]
+#interval=once
+#signal=8
+
+#[arch-updates]
+#command=/home/tushar/.config/i3blocks/scripts/archupdates.sh
+#command=/home/tushar/.config/i3blocks/scripts/archupdates_text.sh
+#interval=3600
+#align=center
+
+[disk-utils]
+#label= 
+#command=/home/tushar/.config/i3blocks/scripts/diskutils.sh
+command=/home/tushar/.config/i3blocks/scripts/diskutils_text.sh
+interval=60
+align=center
+
+[memory]
+#label= 
+#command=/home/tushar/.config/i3blocks/scripts/memory.sh
+command=/home/tushar/.config/i3blocks/scripts/memory_text.sh
+interval=5
+align=center
+
+#[wifi]
+#command=/home/tushar/.config/i3blocks/scripts/wifi.sh
+#command=/home/tushar/.config/i3blocks/scripts/wifi_text.sh
+#interval=5
+#align=center
+
+[bandwidth]
+command=/home/tushar/.config/i3blocks/scripts/bandwidth.sh
+interval=2
+#INTERFACE=wlp2s0
+#INLABEL=IN 
+#OUTLABEL=OUT 
+#TREAT_UNKNOWN_AS_UP=0
+
+[temp-stats]
+command=/home/tushar/.config/i3blocks/scripts/temp_text.sh
+interval=5
+align=center
+
+[brightness]
+#label= 
+#command=/home/tushar/.config/i3blocks/scripts/brightness.sh
+command=/home/tushar/.config/i3blocks/scripts/brightness_text.sh
+signal=13
+align=center
+interval=once
+
+[volume]
+# command=/home/tushar/.config/i3blocks/scripts/volume.sh
+command=/home/tushar/.config/i3blocks/scripts/volume_text.sh
+interval=once
+signal=10
+align=center
+
+[battery]
+# command=/home/tushar/.config/i3blocks/scripts/battery.sh
+command=/home/tushar/.config/i3blocks/scripts/battery_text.sh
+interval=1
+align=center
+
+[date]
+# label= 
+# command=date '+%a %d %b'
+#command=echo Date $(date '+%a %d %b')
+command=/home/tushar/.config/i3blocks/scripts/date_text.sh
+interval=60
+align=center
+
+[time]
+# label= 
+# command=date '+%H:%M'
+command=/home/tushar/.config/i3blocks/scripts/time_text.sh
+#command=echo Time $(date '+%H:%M')
+interval=60
+align=center

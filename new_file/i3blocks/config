@@ -1,0 +1,38 @@
+# i3blocks configuration file
+
+# Global properties
+separator=true
+separator_block_width=15
+align=center
+
+[disk]
+command=/home/tushar/.config/i3blocks/scripts/disk.sh
+interval=600
+
+[memory]
+command=/home/tushar/.config/i3blocks/scripts/memory.sh
+interval=5
+
+[brightness]
+command=/home/tushar/.config/i3blocks/scripts/brightness.sh
+interval=once
+signal=9
+
+[volume]
+command=/home/tushar/.config/i3blocks/scripts/volume_alsa.sh
+interval=once
+signal=10
+
+[battery]
+command=/home/tushar/.config/i3blocks/scripts/battery.sh
+interval=5
+
+[date]
+label=Date: 
+command=date '+%a, %b %d'
+interval=60
+
+[time]
+label=Time: 
+command=date '+%I:%M %p'
+interval=60
